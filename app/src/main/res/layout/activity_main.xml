@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+    <com.budiyev.android.codescanner.CodeScannerView
+
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:autoFocusButtonColor="@color/dark_brown"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/dark_brown"
+        app:flashButtonVisible="true"
+        app:frameColor="@color/dark_brown"
+        app:frameCornersSize="50dp"
+        app:frameCornersRadius="1dp"
+        app:frameAspectRatioWidth="1"
+        app:frameAspectRatioHeight="1"
+        app:frameSize="0.80"
+        app:frameThickness="10dp"
+        app:maskColor="@color/teal_700"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_for_layouts">
+        <TextView
+            android:id="@+id/Result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:textColor="@color/dark_brown"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
